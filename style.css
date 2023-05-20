@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--Violet);
+}
+
+header {
+    background-image: url(./images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    margin: 40px 20px 30px 0;
+}
+
+.image {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .ilustracion {
+    width: 350px;
+}
+
+main {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+    text-align: center;
+}
+
+main h1 {
+    margin: 20px 0;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main p {
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+button {
+    width: 70%;
+    height: 40px;
+    border: none;
+    margin: 20px 0;
+    font-size: 20px;
+    color: var(--Violet);
+    border-radius: 20px;
+}
+
+footer {
+    margin: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes ul li a {
+    color: #fff;
+}
+
+footer ul li {
+    padding: 8px;
+    border: 1px solid #fff;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+button:hover,li:hover{
+    cursor: pointer;
+    background: var(--SoftMagenta);
+    color: #fff;
+}
+@media (min-width: 900px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+    }
+
+    main,
+    header {
+        margin: 30px;
+        height: 80vh;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 50px;
+        text-align: start;
+    }
+
+    header {
+        margin-bottom: 0;
+        background-image: none;
+    }
+    header .ilustracion {
+        width: 600px;
+    }
+
+    header .logo {
+        margin-bottom: 20px;
+    }
+    button{
+        width: 40%;
+    }
+    footer{
+        grid-column-start: 2;
+        justify-self: end;
+        margin-right: 50px;
+    }
+}
