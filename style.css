@@ -93,6 +93,14 @@ button:hover,li:hover{
     color: #fff;
 }
 @media (min-width: 900px) {
+    main h1{
+        font-size: 45px;
+        margin: 25px 0 0 0;
+    }
+    main p{
+        font-size: 15px;
+        margin: 20px 41px 0 0 ;
+    }
     body {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -112,7 +120,7 @@ button:hover,li:hover{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 50px;
+        margin: 60px 50px 0 50px;
         text-align: start;
     }
 
@@ -122,17 +130,25 @@ button:hover,li:hover{
     }
     header .ilustracion {
         width: 600px;
+        position: relative;
+        left: 50px;
     }
 
     header .logo {
-        margin-bottom: 20px;
+        position: relative;
+        bottom: 30px;
+        left: 50px;
     }
     button{
-        width: 40%;
+        width: 30%;
+        height: 50px;
+        border-radius: 25px;
     }
     footer{
         grid-column-start: 2;
         justify-self: end;
-        margin-right: 50px;
+        position: relative;
+        right: 50px;
+        bottom: 30px;
     }
 }
